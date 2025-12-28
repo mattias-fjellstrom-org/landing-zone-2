@@ -16,6 +16,7 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5
       - uses: azure/login@8c334a195cbb38e46038007b304988d888bf676a
         with:
           client-id: ${{ env.AZURE_CLIENT_ID }}
